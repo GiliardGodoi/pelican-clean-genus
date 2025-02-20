@@ -16,7 +16,7 @@ p {
   margin: 30px 0;
 }
 p a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 h1,
 h2,
@@ -173,7 +173,7 @@ hr.small {
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
   font-size: 24px;
-  line-height: 1.1,
+  line-height: 1.1;
 			display: block;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -225,18 +225,18 @@ hr.small {
   color: #0085a1;
 }
 .post-preview > a > .post-title {
-  font-size: 30px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 2px;
 }
 .post-preview > a > .post-subtitle {
   margin: 0;
-  font-weight: 300;
+  font-weight: 150;
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
   color: #808080;
-  font-size: 18px;
+  font-size: 15px;
   font-style: italic;
   margin-top: 0;
 }
@@ -246,7 +246,7 @@ hr.small {
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0085a1;
+  color: #705406;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -405,6 +405,87 @@ body {
   webkit-tap-highlight-color: #0085a1;
 }
 .article-summary {
-  padding-top:10px;
-  padding-bottom: 10px;
+  font-size: 18px;
+  padding-top:2px;
+  padding-bottom: 0px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.tags a {
+  font-size: .8em;
+  border-radius: .3em;
+  border: none;
+  display: inline-block;
+  padding: .4em .75em;
+  margin-top: .4rem;
+  background-color: rgba(0, 0, 0, .1);
+  color: rgba(0, 0, 0, .6);
+  text-decoration: none;
+}
+
+.tags a:hover {
+  background-color: rgba(0, 0, 0, .07)
+}
+
+/* Estilo básico para tabelas dataframe */
+table.dataframe {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Estilo para o cabeçalho da tabela */
+table.dataframe thead {
+    background-color: #4A90E2;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Células do cabeçalho */
+table.dataframe thead th {
+    padding: 10px;
+    border-bottom: 2px solid #357ABD;
+}
+
+/* Linhas alternadas para melhor leitura */
+table.dataframe tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+table.dataframe tbody tr:nth-child(even) {
+    background-color: #eef3f7;
+}
+
+/* Células do corpo da tabela */
+table.dataframe tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hover para destacar a linha */
+table.dataframe tbody tr:hover {
+    background-color: #d0e2f5;
+}
+
+/* Bordas arredondadas no canto da tabela */
+table.dataframe thead th:first-child {
+    border-top-left-radius: 8px;
+}
+
+table.dataframe thead th:last-child {
+    border-top-right-radius: 8px;
+}
+
+table.dataframe tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+table.dataframe tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
 }
